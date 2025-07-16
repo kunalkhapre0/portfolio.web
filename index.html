@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    .animate-fade-in, .animate-slide-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .animate-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    span {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Kunal's Portfolio.</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="animate-fade-in">
+    <h2>Hello, I'm <span>Kunal Khapre</span></h2>
+    <p>I am an AI student at SAGE University, Indore. I teach machines/systems to learn, think, and make smart decisions. Let's build the future with AI.</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
+
+  <section id="about" class="animate-slide-up">
+    <h2>About Me</h2>
+    <p>B.Tech Artificial Intelligence student passionate about machine learning, deep learning, and real-world AI applications. Experienced in Python (NumPy, Pandas & Matplotlib), NLP, and computer vision.</p>
+  </section>
+
+  <section id="skills" class="animate-fade-in">
+    <h2>Skills & Tools</h2>
+    <div class="grid">
+      <div class="card">🖥️ Programming: Python, C/C++</div>
+      <div class="card">📊 Data: Pandas, NumPy, Matplotlib, SQL</div>
+      <div class="card">🛠️ Tools: Jupyter, Git/GitHub, VSCode, Google Colab</div>
+      <div class="card">🌐 Web: HTML/CSS, JavaScript</div>
+    </div>
+  </section>
+
+  <section id="projects" class="animate-slide-up">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>Built an AI chatbot using Python & GPT APIs to automate customer service.</p>
+      </div>
+      <div class="card">
+        <h3>DevOps Pipeline</h3>
+        <p>CI/CD pipeline with GitHub Actions, Docker, and Kubernetes deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="animate-fade-in">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Microsoft Azure Fundamentals</h3>
+        <p><a href="https://learn.microsoft.com/api/achievements/share/en-us/KunalKhapre-2814/9YPW6ATU?sharingId=31E147875B24AE8E" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>Samatrix Consulting Pvt. Ltd.</h3>
+        <p><a href="https://verify.netcredential.com/roy80Bu1Fd" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>Deloitte - Data Analytics</h3>
+        <p><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_YATZTyqLTozhqPd2v_1751466133152_completion_certificate.pdf" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>Tata - GenAI Analytics</h3>
+        <p><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_YATZTyqLTozhqPd2v_1751466133152_completion_certificate.pdf" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>AI for Beginners</h3>
+        <p><a href="https://www.life-global.org/certificate/89fb4969-1e74-4052-9ae0-ba571727634f" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>Generative AI - Google Cloud</h3>
+        <p><a href="https://www.cloudskillsboost.google/course_templates/536" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>SQL (Basic)</h3>
+        <p><a href="https://www.hackerrank.com/certificates/5370e1bf28de" target="_blank">View Certificate</a></p>
+      </div>
+      <div class="card">
+        <h3>Visualize Data Using Microsoft Powerpoint</h3>
+        <p><a href="https://www.coursera.org/account/accomplishments/records/QSWOVSI7NABU" target="_blank">View Certificate</a></p>
+    </div>
+    <div class="card">
+        <h3>Intoduction to Programing Using Python</h3>
+        <p><a href="https://www.geeksforgeeks.org/certificate/21ffe8d8b150e0c52cdff374cda95e09?utm_source=socials&utm_medium=cc_link" target="_blank">View Certificate</a></p>
+      </div>
+  </section>
+
+  <section id="profiles" class="animate-slide-up">
+    <h2>Profiles</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fab fa-github"></i> GitHub</h3>
+        <p><a href="https://github.com/kunalkhapre0" target="_blank">Visit my GitHub Profile</a></p>
+      </div>
+      <div class="card">
+        <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/kunal-khapre-431096369" target="_blank">Visit my LinkedIn Profile</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="animate-fade-in">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fas fa-phone"></i> Mobile</h3>
+        <p>+91 92386 81658</p>
+        <p><a href="tel:+919238681658">Call Me</a></p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-envelope"></i> Email</h3>
+        <p>kunalkhapre093@gmail.com</p>
+        <p><a href="mailto:kunalkhapre093@gmail.com">Send Email</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2k25 Kunal Khapre genrated porfolio website.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    });
+    document.querySelectorAll('.animate-fade-in, .animate-slide-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
